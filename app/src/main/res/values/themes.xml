@@ -13,4 +13,13 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="bubble_navigation">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="bt_colorActive">@color/white</item>
+        <item name="bt_colorInactive">@color/blue_dark</item>
+        <item name="bt_shape">@drawable/bubble_shape</item>
+        <item name="bt_shapeColor">@color/blue_light</item>
+    </style>
 </resources>

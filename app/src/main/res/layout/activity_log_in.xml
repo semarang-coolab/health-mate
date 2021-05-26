@@ -84,7 +84,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edit_password"
             app:strokeColor="@color/blue_light"
-            app:strokeWidth="1dp" />
+            app:strokeWidth="1dp"
+            android:onClick="logIn"/>
 
         <TextView
             android:id="@+id/tv_already"

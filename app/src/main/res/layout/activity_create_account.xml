@@ -123,7 +123,8 @@
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_already"/>
+            app:layout_constraintTop_toBottomOf="@id/tv_already"
+            android:onClick="gotoLogIn"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
