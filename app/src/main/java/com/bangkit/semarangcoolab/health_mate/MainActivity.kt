@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.getFragment().observe(this, { fragment ->
             when (fragment) {
                 "favorite" -> navigateFragment(DashboardFragment())
+                "bookmark" -> navigateFragment(DashboardFragment())
                 "about" -> navigateFragment(NotificationsFragment())
                 else -> navigateFragment(HomeFragment())
             }
@@ -42,6 +43,10 @@ class MainActivity : AppCompatActivity() {
                     navigateFragment(DashboardFragment())
                 }
                 2 -> {
+                    viewModel.setFragment("Bookmark")
+                    navigateFragment(DashboardFragment())
+                }
+                3 -> {
                     viewModel.setFragment("Notifications")
                     navigateFragment(NotificationsFragment())
                 }
